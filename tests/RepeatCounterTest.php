@@ -26,5 +26,17 @@
             // Assert
             $this->assertEquals(2, $result);
         }
+
+        function test_countRepeats_ignorePartialMatches()
+        {
+            // Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $searchInput = "Concatenate this please";
+            $findInput = "cat";
+            // Act
+            $result = $test_RepeatCounter->countRepeats($searchInput, $findInput);
+            // Assert
+            $this->assertEquals(0, $result);
+        }
     }
  ?>
