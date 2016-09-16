@@ -10,10 +10,12 @@
         return $app['twig']->render('homepage.html.twig');
     });
 
-    $app->post('/displayResults', function() use ($app) {
+    $app->post('/displayResult', function() use ($app) {
         $searchInput = $_POST['searchInput'];
         $findInput = $_POST['findInput'];
-        return $app['twig']->render('display-results.html.twig');
+        $repeatCounter = new RepeatCounter;
+        $wordInstances = $repeatCounter->countRepeats($searchInput, $findInput);
+        return $app['twig']->render('display-results.html.twig', array('wordInstances' => $wordInstances, 'searchInput' => $searchInput, 'findInput' => $findInput));
     });
 
     return $app;

@@ -5,6 +5,13 @@
         <title>Word Frequency Results</title>
     </head>
     <body>
-
+        <div class='container'>
+            <h1 class='page-header'>Word Frequency Results</h1>
+            <h2>"{{ findInput }}" <small>appears </small>{{ wordInstances }} <small>times in the text:</small></h2>
+            <p>"{{ searchInput }}"</p>
+            <form action='/'>
+                <button type='submit' class='btn'>Search Again</button>
+            </form>
+        </div>
     </body>
 </html>
