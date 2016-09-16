@@ -14,5 +14,17 @@
             // Assert
             $this->assertEquals(1, $result);
         }
+
+        function test_countRepeats_multipleFoundInstances()
+        {
+            // Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $searchInput = "This test isn't much of a test";
+            $findInput = "test";
+            // Act
+            $result = $test_RepeatCounter->countRepeats($searchInput, $findInput);
+            // Assert
+            $this->assertEquals(2, $result);
+        }
     }
  ?>
