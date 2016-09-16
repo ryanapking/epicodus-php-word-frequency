@@ -6,7 +6,8 @@
             $repeatCounter = 0;
             $searchArray = explode(" ", $searchInput);
             foreach ($searchArray as $word) {
-                if ($word == $findInput) {
+                if ($findInput == $word ||
+                $findInput == preg_replace('([?!.,\'"])', "", $word)) {
                     $repeatCounter++;
                 }
             }
