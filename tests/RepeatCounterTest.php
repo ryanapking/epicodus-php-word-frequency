@@ -50,5 +50,16 @@
             // Assert
             $this->assertEquals(1, $result);
         }
+
+        function test_countRepeats_apostropheWithinQuotations()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $searchInput = "\"can't\"";
+            $findInput = "can't";
+            // Act
+            $result = $test_RepeatCounter->countRepeats($searchInput, $findInput);
+            // Assert
+            $this->assertEquals(1, $result);
+        }
     }
  ?>
