@@ -38,5 +38,17 @@
             // Assert
             $this->assertEquals(0, $result);
         }
+
+        function test_countRepeats_ignorePunctuation()
+        {
+            // Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $searchInput = "Will it find 'this?' despite the punctuation?";
+            $findInput = "this";
+            // Act
+            $result = $test_RepeatCounter->countRepeats($searchInput, $findInput);
+            // Assert
+            $this->assertEquals(1, $result);
+        }
     }
  ?>
