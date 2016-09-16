@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <title>Word Frequency</title>
+    </head>
+    <body>
+        <div class='container'>
+            <h1 class='page-header'>Word Frequency Finder</h1>
+            <form method='post' action='/displayResult'>
+                <h4>Enter the text you would like to search:</h4>
+                <textarea name='searchInput' class='form-control' rows='10'></textarea>
+                <h4>Enter the word you would like to find:</h4>
+                <input type='text' name='findInput'class='form-control'>
+                <br>
+                <button type='submit' class='btn'>Submit Form</button>
+            </form>
+        </div>
+    </body>
+</html>
