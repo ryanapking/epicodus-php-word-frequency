@@ -26,7 +26,7 @@ _Spec 4: Ignore punctuation that is attached to the Search string._
 * _Input: Search Input: "Will it find 'this?' despite the punctuation?" Find input: "this"_
 * _Output: 1_
 
-_Spec 5: Allow for punctuation that belongs within a word, like a quotation mark._
+_Spec 5: Allow for punctuation that belongs within a word, like an apostrophe._
 * _Input: Search Input: "\"can't\"" Find Input: "can't"_
 * _Output: 1_
 
