@@ -3,9 +3,14 @@
     {
         function countRepeats($searchInput, $findInput)
         {
-            if ($searchInput == $findInput) {
-                return 1;
+            $repeatCounter = 0;
+            $searchArray = explode(" ", $searchInput);
+            foreach ($searchArray as $word) {
+                if ($word == $findInput) {
+                    $repeatCounter++;
+                }
             }
+            return $repeatCounter;
         }
     }
  ?>
