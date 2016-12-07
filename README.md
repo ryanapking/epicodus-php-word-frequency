@@ -8,6 +8,8 @@
 
 _User enters a block of text that is to be searched, and the word they would like to find, and the program returns how many times that word occurs within the text._
 
+_Project can be viewed [here](http://word-frequency.ryanapking.com/)._
+
 ## Specifications
 
 _Spec 1: Return 1 if the two input strings match_
